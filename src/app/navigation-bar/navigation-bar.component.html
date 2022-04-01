@@ -1,0 +1,54 @@
+<div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+            href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i></a>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-button" title="Notifications">Analysis <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                <a href="#requirement" class="w3-bar-item w3-button">Requirement</a>
+                <a href="#application" class="w3-bar-item w3-button">Application Quality</a>
+                <a href="#" class="w3-bar-item w3-button">Test Quality</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-button" title="Notifications">Bug Evaluation <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                <a href="#" class="w3-bar-item w3-button">Bug Severity</a>
+                <a href="#" class="w3-bar-item w3-button">Bug Type</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-button" title="Notifications">Checklist <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                <a href="#environment" class="w3-bar-item w3-button">Environment Setup</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-button" title="Notifications">Template <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                <a (click)="downloadTestPlan()" class="w3-bar-item w3-button">Test Plan</a>
+                <a (click)="downloadTestReport()" class="w3-bar-item w3-button">Test Report</a>
+            </div>
+        </div>
+        <a class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+            onclick="document.getElementById('id01').style.display='block'">Help</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i
+                class="fa fa-search"></i></a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <!-- <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+        <a href="#team" class="w3-bar-item w3-button">Team</a>
+        <a href="#work" class="w3-bar-item w3-button">Work</a>
+        <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        <a href="#" class="w3-bar-item w3-button">Search</a>
+      </div> -->
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+    <app-help-modal></app-help-modal>
+</div>

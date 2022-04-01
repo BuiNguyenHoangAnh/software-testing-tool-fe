@@ -1,0 +1,27 @@
+<div class="w3-row-padding w3-center w3-padding-64 w3-theme-l1" id="environment">
+    <h2>ENVIRONMENT SETUP CHECKLIST</h2>
+    <p>Choose a pricing plan that fits your needs.</p><br>
+    <p class="printBtn" (click)="downloadAsPDF()">Print checklist</p><br>
+
+    <div>
+		<input  matInput placeholder="Type your item. Ex: [Environment] QA environment must be started." class="textareafull" [(ngModel)]="inputValue.content" name="inputValue">
+
+        <span (click)="addNewItem()" class="addBtn" *ngIf="!editValue">Add</span>
+        <span (click)="saveItem()" class="addBtn" *ngIf="editValue">Save</span>
+    </div>
+</div>
+
+<ul id="checklist" *ngFor="let item of checklist">
+    <div class="w3-row">
+        <li [ngClass]="item.isDone ? 'checked' : 'uncheck'">
+            {{item.content}}
+            <mat-icon (click)="markItemAsDone(item)" class="btn" *ngIf="!item.isDone"> check</mat-icon>
+            <mat-icon (click)="markItemAsNotDone(item)" class="btn" *ngIf="item.isDone"> undo</mat-icon>
+
+            <mat-icon (click)="editItem(item)" class="btn"> edit</mat-icon>
+            <mat-icon (click)="deleteItem(item.id)" class="btn">delete</mat-icon>
+        </li>
+        <!-- <mat-icon (click)="markItemAsDone(item)" class="btn" *ngIf="!item.isDone"> check</mat-icon> -->
+
+    </div>
+</ul>
