@@ -12,6 +12,7 @@ import { EnvironmentSetupComponent } from './environment-setup/environment-setup
 import { MatIconModule } from '@angular/material/icon'
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { BugSeverityComponent } from './bug-severity/bug-severity.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     RequirementAnalysisComponent,
     ApplicationQualityComponent,
     EnvironmentSetupComponent,
-    FooterComponent
+    FooterComponent,
+    BugSeverityComponent
   ],
   imports: [
     BrowserModule,
