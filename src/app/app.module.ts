@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +13,8 @@ import { EnvironmentSetupComponent } from './environment-setup/environment-setup
 import { MatIconModule } from '@angular/material/icon'
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
-import { BugSeverityComponent } from './bug-severity/bug-severity.component';
+import { BugEvaluationComponent } from './bug-evaluation/bug-evaluation.component';
+import { SeverityService } from './severity.service';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,14 @@ import { BugSeverityComponent } from './bug-severity/bug-severity.component';
     ApplicationQualityComponent,
     EnvironmentSetupComponent,
     FooterComponent,
-    BugSeverityComponent
+    BugEvaluationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

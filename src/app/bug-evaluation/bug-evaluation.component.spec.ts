@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BugSeverityComponent } from './bug-severity.component';
+import { BugEvaluationComponent } from './bug-evaluation.component';
 
-describe('BugSeverityComponent', () => {
-  let component: BugSeverityComponent;
-  let fixture: ComponentFixture<BugSeverityComponent>;
+describe('BugEvaluationComponent', () => {
+  let component: BugEvaluationComponent;
+  let fixture: ComponentFixture<BugEvaluationComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BugSeverityComponent ]
+      declarations: [ BugEvaluationComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BugSeverityComponent);
+    fixture = TestBed.createComponent(BugEvaluationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
